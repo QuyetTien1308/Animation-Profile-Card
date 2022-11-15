@@ -23,7 +23,7 @@ body{
 .card:hover{
     height: 450px;
 }
-.card .img{
+.card .img-profile{
     position: absolute;
     top:  -50px;
     left: 50%;
@@ -33,9 +33,18 @@ body{
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 15px 50px rbga(0, 0, 0, 0.35);
+    overflow: hidden;
     transition: .5s;
 }
-.card:hover .img{
+.card:hover .img-profile{
     width: 250px;
     height: 250px;
+}
+.card .img-profile img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
